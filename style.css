@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.header {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: block;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.container ul {
+  display: flex;
+  top: -100%;
+}
+.container ul li {
+  text-align: center;
+  margin-right: 30px;
+}
+.container ul li a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: black;
+}
+
+.burger-btn {
+  display: none;
+}
+
+.burger-btn span {
+  margin: 5px 0;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+
+@media (max-width: 680px) {
+  .burger-btn {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    display: block;
+    text-align: center;
+    left: 0;
+    top: -100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+  }
+
+  .container ul li {
+    margin: 100px 0;
+  }
+  .container ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+  }
+  .active ul {
+    top: 100px;
+  }
+}
+
+.container-text {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container-text p {
+  margin-bottom: 30px;
+}
