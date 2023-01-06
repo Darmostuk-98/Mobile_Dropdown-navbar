@@ -39,10 +39,10 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 20px;
+  transition: 0.5s;
 }
 .container ul li a:hover {
-  opacity: 0.7;
-  transition: 0.5s;
+  opacity: 0.5;
 }
 
 .burger-btn {
@@ -99,8 +99,7 @@
 }
 .container-text {
   padding-top: 100px;
-
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
