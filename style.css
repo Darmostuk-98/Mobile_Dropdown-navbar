@@ -8,6 +8,7 @@
 .header {
   width: 100%;
   margin: 0 auto;
+  background-color: rgb(146, 99, 99);
 }
 .container {
   position: relative;
@@ -16,11 +17,15 @@
   justify-content: space-between;
   align-items: center;
 }
+.container a {
+  color: #fff;
+}
 .logo {
   display: block;
   font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  color: #fff;
 }
 .container ul {
   display: flex;
@@ -34,7 +39,10 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 20px;
-  color: black;
+}
+.container ul li a:hover {
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 .burger-btn {
@@ -46,7 +54,7 @@
   display: block;
   width: 30px;
   height: 3px;
-  background-color: black;
+  background-color: #fff;
 }
 
 @media (max-width: 680px) {
@@ -54,8 +62,8 @@
     display: block;
     cursor: pointer;
     position: relative;
+    z-index: 5;
   }
-
   .container ul {
     display: flex;
     align-items: center;
@@ -70,6 +78,9 @@
     background-color: rgba(0, 0, 0, 0.9);
     height: 100%;
   }
+  .header {
+    z-index: 5;
+  }
 
   .container ul li {
     margin: 100px 0;
@@ -78,12 +89,17 @@
     color: rgb(255, 255, 255);
     font-size: 2em;
   }
+  .container ul li a:hover {
+    color: rgb(136, 136, 136);
+    transition: 0.5s;
+  }
   .active ul {
-    top: 100px;
+    top: 91px;
   }
 }
-
 .container-text {
+  padding-top: 100px;
+
   width: 50%;
   margin: 0 auto;
   font-size: 18px;
